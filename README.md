@@ -25,9 +25,9 @@ En este proyecto tratamos de solucionar el problema siguiente:
    La ultima columna de la tabla "Danger" nos indica si el email esta clasificado como peligroso "1" o no "0".
    
    El modo de operación se puede describir como sigue:
-     -----------     -----------------------------      ----------      ----------------------------      ---------------------
-     | emails |--->| Utils.getEntryData(emails) | ---->| Modelo | ---->| Utilis.ConvertToBinary() |---> | danger or no denger| 
-     ----------     ------------------------------      ----------      ----------------------------     ----------------------
+	 
+	 Emails --> Utils.getDataEntry()---> model---> Utils.ConvertToBinary()---> denger or no danger
+    
    
   El resultado de nuestro modelo(Clasificacion binaria con perceptron multicapas) ha tenido una puntuacion de 67%.
   
