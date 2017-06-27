@@ -24,7 +24,7 @@ def get_X_train_data():
 def get_Y_train_data():
 	return np.array([1,0,1,1,0,1,1,0,0,0,1,1,0])
 
-# Preparamos Datos de prueba
+# Preparamos Datos de prueba, aqui se puede añadir tantos datos que queremos  para probar el modelo
 
 def Train_Data():
 	str1 ="Today I am going to play."
@@ -55,7 +55,10 @@ def ConvertToBynary(vect):
 #Aqui construyemos  nuestros datos de entrada a partir de un texto
 def getEntryData(stringData):
 	data =np.array([0,0,0,0,0,0,0,0,0,0,0,0])
+	# convertimos el texto completo en minuscula
 	lowcase= stringData.lower()
+
+	#Quitamos los simboolos (., ?, ....)
 	wordList = lowcase.split(".")
 	empty = " "
 	wordList = empty.join(wordList)
