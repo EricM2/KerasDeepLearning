@@ -1,7 +1,7 @@
 # KerasDeepLearning
 
 En este proyecto tratamos de solucionar el problema siguiente:
-   Por motivos de seguridad , un govierno decide analizar el contenidod de comunicaciones para detectar emails peligrosos.
+   Por motivos de seguridad , un gobierno decide analizar el contenido de comunicaciones para detectar emails peligrosos.
    Para ello, establece una lista de palabras consideradas como recurentes en conversaciones de terroristas.
    En este proyecto, eligimos 12 palabras como viene presentado en la tabla siguiente:
    -------------------------------------------------------------------------------------------------
@@ -22,7 +22,12 @@ En este proyecto tratamos de solucionar el problema siguiente:
     0	0	0	0	0	0	0	0	1	1	0	0	0
    --------------------------------------------------------------------------------------------------------
    El valor 1 indica que la palabre correspondiente aparece en el email.
-   La ultima columna de la tabla "Danger" nos indica si el email esta clasificado como peligroso "1" o no "0"
+   La ultima columna de la tabla "Danger" nos indica si el email esta clasificado como peligroso "1" o no "0".
+   
+   El modo de operación se puede describir como sigue:
+     -----------     -----------------------------      ----------      ----------------------------      ---------------------
+     | emails |--->| Utils.getEntryData(emails) | ---->| Modelo | ---->| Utilis.ConvertToBinary() |---> | danger or no denger| 
+     ----------     ------------------------------      ----------      ----------------------------     ----------------------
    
   El resultado de nuestro modelo(Clasificacion binaria con perceptron multicapas) ha tenido una puntuacion de 67%.
   
